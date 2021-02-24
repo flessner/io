@@ -1,6 +1,10 @@
 theme: jekyll-theme-primer
 
-title: Flessner
+plugins:
+  - jekyll-feed
+
+title: Flessner.io
+author: Torben Flessner
 
 defaults:
   -
