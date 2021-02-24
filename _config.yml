@@ -15,7 +15,7 @@ defaults:
       layout: "foam"
   -
     scope:
-      path: "blog"
+      path: "_posts"
       type: "pages"
     values:
       layout: "article"
