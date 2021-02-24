@@ -1,4 +1,4 @@
-<!-- https://github.com/pages-themes/primer/blob/master/_layouts/default.html -->
+<!-- SOURCE: https://github.com/pages-themes/primer/blob/master/_layouts/default.html -->
 
 <!DOCTYPE html>
 <html lang="{{ site.lang | page.lang | default: "en-US" }}">
@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
-  <body>
+  <body style="margin: 0; padding: 0;">
+    <!-- HEADER -->
     <header>
-      <a style="color: white; font-size: larger;" href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+      <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
     </header>
     <div class="container-lg px-3 my-5 markdown-body">
 
