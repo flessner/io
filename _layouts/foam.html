@@ -9,12 +9,12 @@
     {% seo %}
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <link rel="alternate" type="application/atom+xml" title="Flessner's Blog" href="/feed.xml">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
   </head>
   <body style="margin: 0; padding: 0;">
     <!-- HEADER -->
     <header>
-      <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+      <a style="text-decoration: none;" href="{{ "/" | absolute_url }}">{{ site.title }}</a>
     </header>
     <div class="container-lg px-3 my-5 markdown-body">
 
