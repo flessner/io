@@ -16,3 +16,15 @@ defaults:
     values:
       layout: "article"
       author: "Torben Flessner"
+  -
+    scope:
+      path: "de"
+      type: "pages"
+    values:
+      lang: "de-DE"
+  -
+    scope:
+      path: "en"
+      type: "pages"
+    values:
+      lang: "en-US"
