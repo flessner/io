@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    <header>
+      <a style="color: white;" href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+    </header>
     <div class="container-lg px-3 my-5 markdown-body">
-      <div style="height: 80px; width: 100%; color: black;">
-        <a style="color: white;" href="{{ "/" | absolute_url }}">{{ site.title }}</a>
-      </div>
 
       {{ content }}
 
