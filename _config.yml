@@ -15,8 +15,8 @@ defaults:
       layout: "foam"
   -
     scope:
-      path: "_posts"
-      type: "pages"
+      path: ""
+      type: "posts"
     values:
       layout: "article"
       author: "Torben Flessner"
