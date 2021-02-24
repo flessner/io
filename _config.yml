@@ -5,8 +5,14 @@ title: Flessner
 defaults:
   -
     scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "foam"
+  -
+    scope:
       path: "blog"
       type: "pages"
     values:
-      layout: "project"
+      layout: "article"
       author: "Torben Flessner"
