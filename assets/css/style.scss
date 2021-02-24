@@ -27,6 +27,8 @@ header {
   height: 60px;
   width: 100vw;
   background-color: #000;
+  display: flex;
+  justify-content: space-around;
 }
 
 header a {
@@ -35,8 +37,6 @@ header a {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: x-large;
   font-weight: 400;
 }
@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a {
   font-family: Inter, sans-serif;
+  text-decoration: none;
 }
 
 blockquote {
