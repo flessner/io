@@ -1,3 +1,3 @@
-# Wissensbasis
+# German Knowledge Base
 
 Deutsch kommt hier hin...
