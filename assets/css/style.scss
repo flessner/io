@@ -23,9 +23,12 @@ input.task-list-item-checkbox {
 }
 
 header {
-  height: 80px;
+  height: 60px;
   width: 100vw;
-  background-color: #000;
+  background-color: #222;
+}
+
+header a {
   color: white;
   font-size: xx-large;
   font-weight: 700;
