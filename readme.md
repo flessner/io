@@ -1,4 +1,4 @@
-# Welcome!
+# Home
 
 **👋 Welcome to this new Website!**
 
