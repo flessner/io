@@ -8,13 +8,13 @@ layout: foam
     <a href="{{ "/" | absolute_url }}">Home</a>
     {% for crumb in crumbs offset: 1 %}
         {% assign crumb_limit = forloop.index | plus: 1 %}
-        {% capture crumb_path %} {% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | remove:'.html' }}{% endfor %} {% endcapture %}
+        {% capture crumb_path %} {% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | remove:'.html' | remove ' ' }}{% endfor %} {% endcapture %}
         {% if forloop.last %}
             / {{ page.title }}
         {% else %}
             {% for ref in site.pages %}
-                {% assign test_path = ref.url | remove:'.html' | append: '/' %}
-                {% if ref.url | remove:'.html' | append: '/' == crumb_path %}
+                {% assign test_path = ref.url | remove:'.html' | append: '/' | remove ' ' %}
+                {% if test_path == crumb_path %}
                     / <a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>
                 {% endif %}
                 <p>{{ test_path }}</p>
