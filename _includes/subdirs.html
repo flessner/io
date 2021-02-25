@@ -1,18 +1,17 @@
 <ul>
     {% assign querry_url = page.url | remove: ".html" | append: "/" %}
+    <!-- Querry Depth -->
     {% assign querry_test = querry_url | split: "/" %}
     {% assign querry_test = querry_test.size | plus: 1 %}
+    <!-- Checking for sub url -->
     {% for ref in site.pages %}
-        <!-- Checking for sub url -->
         {% if ref.url contains querry_url %}
             <!-- Checking for same depth -->
             {% assign ref_test = ref.url | split: "/" %}
             {% assign ref_test = ref_test.size %}
             {% if querry_test == ref_test %}
-                <p>hit</p>
+                <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
             {% endif %}
-            <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
-            <p>{{ ref_test }}</p>
         {% endif %}
     {% endfor %}
 </ul>
