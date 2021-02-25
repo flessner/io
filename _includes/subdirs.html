@@ -1,8 +1,7 @@
 <ul>
     {% assign querry_url = page.url | remove: ".html" | append: "/" %}
     {% assign querry_test = querry_url | split: "/" %}
-    {% assign querry_test = querry_test.size + 1 %}
-    <p>{{ querry_test }}</p>
+    {% assign querry_test = querry_test.size | plus: 1 %}
     {% for ref in site.pages %}
         <!-- Checking for sub url -->
         {% if ref.url contains querry_url %}
