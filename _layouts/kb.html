@@ -17,8 +17,6 @@ layout: foam
                 {% if test_path == crumb_path %}
                     / <a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>
                 {% endif %}
-                <p>{{ test_path }}</p>
-                <p>{{ crumb_path }}</p>
             {% endfor %}
         {% endif %}
     {% endfor %}
