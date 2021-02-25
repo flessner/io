@@ -7,16 +7,16 @@ layout: foam
     {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
     <a href="{{ "/" | absolute_url }}">Home</a>
     {% for crumb in crumbs offset: 1 %}
+        {% assign crumb_limit = forloop.index | plus: 1 %}
+        {% capture crumb_path %} {% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %} {% endcapture %}
         {% if forloop.last %}
             / {{ page.title }}
         {% else %}
             {% for ref in site.pages %}
                 <p>{{ ref.url }}</p>
-                {% if {% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %} == ref.url %}
-                    <p>{{ ref.title }}</p>
-                {% endif %}
+                <p>{{ crumb_path }}</p>
             {% endfor %}
-            / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+            <!-- / <a href="{{ crumb_path }}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a> -->
         {% endif %}
     {% endfor %}
 </div>
