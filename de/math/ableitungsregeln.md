@@ -9,7 +9,7 @@ $$f(x)=x \rightarrow f'(x)=1$$
 
 ## Potenzregel
 Die Potenzregel ist immer dann anzuwenden, wenn etwas im Exponenten der x-Funktion steht.
-Wie der Name bereits vermuten lässt, handelt es sich dabei um Potenzfunktionen $f(x)=x^n$
+Wie der Name bereits vermuten lässt, handelt es sich dabei um Potenzfunktionen: $f(x)=x^n$
 
 $$f(x)=x^n \rightarrow f'(x)=n \cdot x^{n-1}$$
 
