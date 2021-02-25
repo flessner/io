@@ -1,12 +1,12 @@
 # Home
 
-**👋 Welcome to this new Website!**
+**👋 Welcome to Torben Flessner's Website!**
 
-Resources:
+## Resources
 - [[de]]
 - [[en]]
 
-Here are some articles:
+## Articles
 <ul>
     {% for post in site.posts %}
         <li> <a href="{{ post.url | absolute_url | remove: '.html' }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
