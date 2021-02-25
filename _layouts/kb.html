@@ -11,7 +11,10 @@ layout: foam
             / {{ page.title }}
         {% else %}
             {% for ref in site.pages %}
-                <p>ref.title</p>
+                <p>{{ ref.url }}</p>
+                {% if {% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %} == ref.url %}
+                    <p>{{ ref.title }}</p>
+                {% endif %}
             {% endfor %}
             / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
         {% endif %}
