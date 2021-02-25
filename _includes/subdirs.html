@@ -10,7 +10,7 @@
             {% assign ref_test = ref.url | split: "/" %}
             {% assign ref_test = ref_test.size %}
             {% if querry_test == ref_test %}
-                <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
+                <li>[<a href="{{ ref.url | absolute_url remove: ".html" }}">{{ ref.title }}</a>]</li>
             {% endif %}
         {% endif %}
     {% endfor %}
