@@ -13,11 +13,11 @@ layout: foam
             / {{ page.title }}
         {% else %}
             {% for ref in site.pages %}
-                {% assign test_url = ref.url | remove:'.html' %}
-                {% if test_url == crumb_path %}
+                {% assign test_path = ref.url | remove:'.html' | append: '/' %}
+                {% if ref.url | remove:'.html' | append: '/' == crumb_path %}
                     / <a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>
                 {% endif %}
-                <p>{{ test_url }}</p>
+                <p>{{ test_path }}</p>
                 <p>{{ crumb_path }}</p>
             {% endfor %}
         {% endif %}
