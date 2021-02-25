@@ -25,10 +25,12 @@ defaults:
       path: "de"
       type: "pages"
     values:
+      layout: "kb"
       lang: "de-DE"
   -
     scope:
       path: "en"
       type: "pages"
     values:
+      layout: "kb"
       lang: "en-US"
