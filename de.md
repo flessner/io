@@ -4,4 +4,3 @@
 
 Alle Fachgebiete:
 {% include subdirs.html %}
-
