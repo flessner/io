@@ -2,24 +2,7 @@
 layout: foam
 ---
 
-<!-- BREADCRUMBS -->
-<div id="breadcrumbs">
-    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-    <a href="{{ "/" | absolute_url }}">Home</a>
-    {% for crumb in crumbs offset: 1 %}
-        {% assign crumb_limit = forloop.index | plus: 1 %}
-        {% capture crumb_path %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | remove:'.html' | append: '/' }}{% endfor %}{% endcapture %}
-        {% if forloop.last %}
-            / {{ page.title }}
-        {% else %}
-            {% for ref in site.pages %}
-                {% capture test_path %}{{ ref.url | remove:'.html' | append: '/' }}{% endcapture %}
-                {% if test_path == crumb_path %}
-                    / <a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
-</div>
+{% include breadcrumbs.html %}
+{% include search.html %}
 
 {{ content }}

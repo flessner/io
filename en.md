@@ -1,3 +1,3 @@
-# English Knowledge Base
+# Knowledge Base
 
 Some english stuff here TBD

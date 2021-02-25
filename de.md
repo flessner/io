@@ -1,4 +1,4 @@
-# German Knowledge Base
+# Wissenbasis
 
 Deutsch kommt hier hin...
 
