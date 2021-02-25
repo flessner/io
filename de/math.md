@@ -2,7 +2,11 @@
 
 Alle Mathe Resourcen:
 <ul>
-    {% for math in site.de.math %}
-        <li><a href="{{ math.url }}">{{ math.title }}</a></li>
+    {% for ref in site.pages %}
+        {% if site.url contains ref.url %}
+            <li><a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a></li>
+        {% endif %}
+        <p>{{ page.url }}</p>
+        <p>{{ ref.url }}</p>
     {% endfor %}
 </ul>
