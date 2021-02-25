@@ -1,4 +1,4 @@
-<script src="{{ "/data/js/lunr.js" | absolute_url }}"></script>
+<script src="{{ "/assign/js/lunr.js" | absolute_url }}"></script>
 
 <script>
 {% assign counter = 0 %}
@@ -7,17 +7,17 @@ var documents = [{% for page in site.pages %}{% if page.url contains '.xml' or p
     "url": "{{ page.url | absolute_url }}",
     "title": "{{ page.title }}",
     "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
+}, {% endif %}{% endfor %}{% for page in site.without-plugin %}{
     "id": {{ counter }},
     "url": "{{ site.url }}{{ page.url }}",
     "title": "{{ page.title }}",
     "body": "{{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }, {% endfor %}{% for page in site.posts %}{
+}, {% endfor %}{% for page in site.posts %}{
     "id": {{ counter }},
     "url": "{{ site.url }}{{ page.url }}",
     "title": "{{ page.title }}",
     "body": "{{ page.date | date: "%Y/%m/%d" }} - {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' }}"{% assign counter = counter | plus: 1 %}
-    }{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
+}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}];
 
 var idx = lunr(function () {
     this.ref('id')
@@ -55,15 +55,15 @@ function lunr_search(term) {
 <style>
     #lunrsearchresults {padding-top: 0.2rem;}
     .lunrsearchresult {padding-bottom: 1rem;}
-    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .title {color: #000;}
     .lunrsearchresult .url {color: silver;}
     .lunrsearchresult a {display: block; color: #777;}
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
 
-<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search via Lunr.js" /></p>
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" class="lunrsearch">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="🔎 Find awesome results..." /></p>
 </form>
 <div id="lunrsearchresults">
     <ul></ul>
