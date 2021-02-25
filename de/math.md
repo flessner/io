@@ -3,7 +3,7 @@
 Alle Mathe Resourcen:
 <ul>
     {% for ref in site.pages %}
-        {% if site.url contains ref.url %}
+        {% if ref.url contains site.url %}
             <li><a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a></li>
         {% endif %}
         <p>{{ page.url }}</p>
