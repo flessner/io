@@ -5,7 +5,7 @@
         {% assign crumb_limit = forloop.index | plus: 1 %}
         {% capture crumb_path %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | remove:'.html' | append: '/' }}{% endfor %}{% endcapture %}
         {% if forloop.last %}
-            / {{ page.title }}
+            » {{ page.title }}
         {% else %}
             {% for ref in site.pages %}
                 {% capture test_path %}{{ ref.url | remove:'.html' | append: '/' }}{% endcapture %}
