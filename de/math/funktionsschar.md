@@ -14,7 +14,7 @@ Beispiel für eine Funktion: $f_a(x)=ax^2-2ax+4a$
 Oft läuft die Berechnung von Funktionsscharren auf so etwas hinaus.
 Beispiel:
 
-$$f_a(x)=\frac{1}{x-a}$$
+- $f_a(x)=\frac{1}{x-a}$
 
 1. $x=a$ ist, dann wäre die Funktion nicht definiert, da der Nenner gleich Null ist.
 2. $x>a$ oder $x<a$ ist, dann ist die Funktion definiert und man kann mit ihr arbeiten.

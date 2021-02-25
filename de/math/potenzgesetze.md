@@ -1,8 +1,5 @@
 # Potenzgesetze
 ## Gleiche Basis
-
-$$e^x$$
-
 ### Multiplikation
 
 $$a^n \cdot a^m = a^{n+m}$$
