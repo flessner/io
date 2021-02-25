@@ -15,9 +15,9 @@ layout: foam
             {% for ref in site.pages %}
                 {% if ref.url == crumb_path %}
                     / <a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>
-                    <p>{{ ref.url }}</p>
-                    <p>{{ crumb_path }}</p>
                 {% endif %}
+                <p>{{ ref.url }}</p>
+                <p>{{ crumb_path }}</p>
             {% endfor %}
         {% endif %}
     {% endfor %}
