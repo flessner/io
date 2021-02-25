@@ -1,0 +1,3 @@
+# Search
+
+{% include search.html %}

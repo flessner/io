@@ -15,7 +15,10 @@
     <!-- HEADER -->
     <header>
       <a href="{{ "/" | absolute_url }}" style="text-decoration: none;">{{ site.title }}</a>
-      <a href="{{ "/feed.xml" | absolute_url }}" style="text-decoration: none; font-size: medium;">RSS</a>
+      <div>
+        <a href="{{ "/search" | absolute_url }}" style="text-decoration: none; font-size: medium;">Search</a>
+        <a href="{{ "/feed.xml" | absolute_url }}" style="text-decoration: none; font-size: medium;">RSS</a>
+      </div>
     </header>
     <div class="container-lg px-3 my-5 markdown-body">
 
