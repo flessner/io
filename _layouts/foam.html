@@ -44,7 +44,6 @@
       // Hack: Replace page-link with "Page Title"
       document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
         a.innerText = a.title;
-        a = '[' + a + ']';
       });
       // Hack: Remove .md extension from wikilinks to get the html in jekyll
       document.querySelectorAll("a").forEach(l => {
