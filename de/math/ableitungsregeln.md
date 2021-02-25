@@ -5,6 +5,8 @@ $$f(x)=C \rightarrow f'(x)=0$$
 
 ## Ableitung von $x$ ist $1$.
 
+$$f(x)=x \rightarrow f'(x)=1$$
+
 ## Potenzregel
 Die Potenzregel ist immer dann anzuwenden, wenn etwas im Exponenten der x-Funktion steht.
 Wie der Name bereits vermuten lässt, handelt es sich dabei um Potenzfunktionen $f(x)=x^n$
