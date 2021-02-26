@@ -1,23 +1,33 @@
 <h2>Backlinks</h2>
-{% assign search_term = page.url | absolute_url | remove: ".html" | split: "/" | last | replace: "-", " " | replace: "'", "" %}
 {% assign page_url = page.url | absolute_url | remove: ".html" %}
+{% assign search_term = page_url | split: "/" | last | replace: "-", " " | replace: "'", "" %}
+{% assign page_top = page_url | split: "/" | last | prepend: "/" %}
+{% assign page_dir = page_url | remove: page_top %}
 <ul>
+<p>search_term</p>
+<p>page_dir</p>
 {% for ref in site.pages %}
     <!-- Only valid pages and no assets -->
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
         {% assign ref_content = ref.content | downcase | replace: "-", " " | replace: "'", "" %}
-        {% assign ref_top = ref.url | absolute_url | remove: ".html" | split: "/" | last | prepend: "/" %}
-        {% assign ref_dir = ref.url | absolute_url | remove: ".html" | remove: ref_top %}
+        {% assign ref_url = ref.url | absolute_url | remove: ".html" %}
+        {% assign ref_top = ref_url | split: "/" | last | prepend: "/" %}
+        {% assign ref_dir = ref_url | remove: ref_top %}
         <!-- Searching all Pages -->
         {% if ref_content contains search_term %}
             <!-- Check if it is not the same site -->
             {% if page.url == ref.url %}{% else %}
                 <!-- Check if page being referenced in not an imediate child -->
                 {% if page_url == ref_dir %}{% else %}
-                    <li>[<a href="{{ ref.url | absolute_url | remove: '.html' }}">{{ ref.title }}</a>]</li>
+                    <!-- Check if it is an imediate parent -->
+                    {% if page_dir == ref_url %}
+                        <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
+                    {% endif %}
                 {% endif %}
             {% endif %}
         {% endif %}
+        <p>{{ ref_url }}</p>
+        <p>{{ ref_dir }}</p>
     {% endif %}
 {% endfor %}
 </ul>
