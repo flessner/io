@@ -5,14 +5,14 @@
 {% for ref in site.pages %}
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
         {% assign ref_content = ref.content | downcase | replace: "-", " " | replace: "'", "" %}
-        {% assign ref_array = ref.url | absolute_url | remove: ".html" | split: "/" }
+        {% assign ref_array = ref.url | absolute_url | remove: ".html" | split: "/" %}
         <!-- Searching all Pages -->
         {% if ref_content contains search_term %}
             <!-- Check if it is not the same site -->
             {% if page.url == ref.url %}{% else %}
                 <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
                 <p>{{ ref.url | absolute_url | remove: ".html" }}</p>
-                <p>{{ ref_array }}</p>
+                <p>{{ ref_array[ref_array.size - 2] }}</p>
             {% endif %}
         {% endif %}
     {% endif %}
