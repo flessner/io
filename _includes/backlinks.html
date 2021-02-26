@@ -29,12 +29,14 @@
 {% endfor %}
 </ul>
 
+<!-- Removing empty backlinks -->
 <script>
     document.querySelectorAll("#backlinks").forEach(e => {
+        console.log(e.innerHTML);
         if(!e.hasChildNodes()) {
+            console.log('triggered');
             document.querySelectorAll("#backlinks-heading").forEach(h => {
-                h.remove();
-                e.remove();
+                h.innerHTML = '';
             });
         }
     });
