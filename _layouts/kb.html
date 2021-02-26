@@ -6,7 +6,7 @@ layout: foam
 
 <ul>
     {% if page.author %}<li><b>Author:</b> {{ page.author }}</li>{% endif %}
-    {% if page.source %}<li><a href="{{ page.source }}"><b>Source</b></a></li>{% endif %}
+    {% if page.source %}<li><b>Source:</b> <a href="{{ page.source }}">{{ page.source }}</a></li>{% endif %}
 </ul>
 
 {{ content }}
