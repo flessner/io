@@ -4,11 +4,11 @@ layout: foam
 
 {% include breadcrumbs.html %}
 
-<ol>
-{% if page.author %}<li><b>Author: {{ page.author }}</b></li>{% endif %}</p>
-{% if page.source %}<li><a href="{{ page.source }}"><b>Source</b></a></li>{% endif %}
-</ol>
-
 {{ content }}
+
+<ol>
+    {% if page.author %}<li><b>Author: {{ page.author }}</b></li>{% endif %}</p>
+    {% if page.source %}<li><a href="{{ page.source }}"><b>Source</b></a></li>{% endif %}
+</ol>
 
 {% include backlinks.html %}
