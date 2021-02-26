@@ -6,9 +6,9 @@ layout: foam
 
 {{ content }}
 
-<ol>
+<ul>
     {% if page.author %}<li><b>Author:</b> {{ page.author }}</li>{% endif %}
     {% if page.source %}<li><a href="{{ page.source }}"><b>Source</b></a></li>{% endif %}
-</ol>
+</ul>
 
 {% include backlinks.html %}
