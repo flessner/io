@@ -7,7 +7,7 @@
         <!-- Searching all Pages -->
         {% if ref_content contains search_url %}
             {% if page.url == ref.url %}{% else %}
-                <li><a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a></li>
+                <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
             {% endif %}
         {% endif %}
     {% endif %}
