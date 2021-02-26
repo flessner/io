@@ -93,6 +93,7 @@ author: David Perell
 [horseshoe-theory]: ../principles/horseshoe-theory.md "Horseshoe Theory"
 [availability-cascade]: ../principles/availability-cascade.md "Availability Cascade"
 [creativity-begins-at-the-edge]: ../principles/creativity-begins-at-the-edge.md "Creativity Begins at the Edge"
+[copernican-principle]: ../principles/copernican-principle.md "The Copernican Principle"
 [personal-monopoly]: ../principles/personal-monopoly.md "Personal Monopoly"
 [paradox-of-consensus]: ../principles/paradox-of-consensus.md "Paradox of Consensus"
 [penny-problem-gap]: ../principles/penny-problem-gap.md "Penny Problem Gap"
