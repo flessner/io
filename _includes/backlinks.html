@@ -1,9 +1,11 @@
 <h2>Backlinks</h2>
-{% assign search_url = page.url | absolute_url %}
+{% assign search_url = page.url | absolute_url | remove: ".html" | split: "/" | last %}
 <p>{{ search_url }}</p>
 {% for ref in site.pages %}
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
-        {% assign ref_content = ref.content %}
-        <p>{{ ref_content }}</p>
+        {% assign ref_content = ref.content | downcase %}
+        {% if ref_content contains search_url %}
+            <p>{{ ref_content }}</p>
+        {% endif %}
     {% endif %}
 {% endfor %}
