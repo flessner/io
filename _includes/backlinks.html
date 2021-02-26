@@ -1,14 +1,16 @@
 <h2>Backlinks</h2>
-{% assign search_url = page.url | absolute_url | remove: ".html" | split: "/" | last | replace "-", " " %}
+{% assign search_url = page.url | absolute_url | remove: ".html" | split: "/" | last | replace: "-", " " | replace: "'", "" %}
 <p>{{ search_url }}</p>
+<ul>
 {% for ref in site.pages %}
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
-        {% assign ref_content = ref.content | downcase | replace "-", " " %}
+        {% assign ref_content = ref.content | downcase | replace: "-", " " | replace: "'", "" %}
         <!-- Searching all Pages -->
         {% if ref_content contains search_url %}
             {% if page.url == ref.url %}{% else %}
-                <p>{{ ref_content }}</p>
+                <li>{{ ref.url }}</li>
             {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %}
+</ul>
