@@ -2,9 +2,10 @@
 {% assign search_url = page.url | absolute_url %}
 <p>{{ search_url }}</p>
 {% for ref in site.pages %}
-    {% if page.url contains '.xml' or page.url contains 'assets' %}
+    {% if ref.url contains '.xml' or ref.url contains 'assets' %}
     {% else %}
         {% assign ref_content = ref.content | markdownify %}
+        {% if ref_content contains %}
         <p>{{ ref_content }}</p>
     {% endif %}
 {% endfor %}
