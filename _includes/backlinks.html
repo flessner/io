@@ -1,11 +1,10 @@
-<h2>Backlinks</h2>
+<h2 class='backlinks-heading'>Backlinks</h2>
 {% assign page_url = page.url | absolute_url | remove: ".html" %}
 {% assign search_term = page_url | split: "/" | last | replace: "-", " " | replace: "'", "" %}
+{% assign search_title = page.title | downcase | replace: "-", " " | replace: "'", "" %}
 {% assign page_top = page_url | split: "/" | last | prepend: "/" %}
 {% assign page_dir = page_url | remove: page_top %}
-<ul>
-<p>{{ search_term }}</p>
-<p>{{ page_dir }}</p>
+<ul class='backlinks'>
 {% for ref in site.pages %}
     <!-- Only valid pages and no assets -->
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
@@ -14,7 +13,7 @@
         {% assign ref_top = ref_url | split: "/" | last | prepend: "/" %}
         {% assign ref_dir = ref_url | remove: ref_top %}
         <!-- Searching all Pages -->
-        {% if ref_content contains search_term %}
+        {% if ref_content contains search_term or ref_content contains search_title %}
             <!-- Check if it is not the same site -->
             {% if page.url == ref.url %}{% else %}
                 <!-- Check if page being referenced in not an imediate child -->
@@ -26,8 +25,17 @@
                 {% endif %}
             {% endif %}
         {% endif %}
-        <p>{{ ref_url }}</p>
-        <p>{{ ref_dir }}</p>
     {% endif %}
 {% endfor %}
 </ul>
+
+<script>
+    document.querySelectorAll("#backlinks").forEach(e => {
+        if(e.innerHTML == "") {
+            document.querySelectorAll("#backlinks-heading").forEach(h => {
+                h.remove();
+                e.remove();
+            });
+        }
+    });
+</script>
