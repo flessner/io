@@ -4,7 +4,7 @@
 {% assign search_title = page.title | downcase | replace: "-", " " | replace: "'", "" %}
 {% assign page_top = page_url | split: "/" | last | prepend: "/" %}
 {% assign page_dir = page_url | remove: page_top %}
-{% assign page_content = page.content | downcase | replace: "-", " " | replace: "'", "" }
+{% assign page_content = page.content | downcase | replace: "-", " " | replace: "'", "" %}
 <ul class='backlinks'>
 {% for ref in site.pages %}
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
