@@ -1,5 +1,10 @@
 <h2>Backlinks</h2>
-<p>{{ page.url }}</p>
+{% assign search_url = page.url | absolute_url | remove '.html' %}
+<p>{{ search_url }}</p>
 {% for ref in site.pages %}
-    <p>{{ ref.content }}</p>
+    {% assign ref_content = ref.content | markdownify | strip_newlines %}
+    <p>{{ ref_content }}</p>
+    {% if ref_content contains search_url %}
+        <p>found</p>
+    {% endif %}
 {% endfor %}
