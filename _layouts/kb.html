@@ -2,12 +2,12 @@
 layout: foam
 ---
 
+{% include breadcrumbs.html %}
+
 <ul>
     {% if page.author %}<li><b>Author:</b> {{ page.author }}</li>{% endif %}
     {% if page.source %}<li><a href="{{ page.source }}"><b>Source</b></a></li>{% endif %}
 </ul>
-
-{% include breadcrumbs.html %}
 
 {{ content }}
 
