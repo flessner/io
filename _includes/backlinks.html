@@ -31,7 +31,7 @@
 
 <script>
     document.querySelectorAll("#backlinks").forEach(e => {
-        if(e.innerHTML == "") {
+        if(!e.hasChildNodes()) {
             document.querySelectorAll("#backlinks-heading").forEach(h => {
                 h.remove();
                 e.remove();
