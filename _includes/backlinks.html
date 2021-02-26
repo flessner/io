@@ -1,5 +1,6 @@
 <h2>Backlinks</h2>
 {% assign search_term = page.url | absolute_url | remove: ".html" | split: "/" | last | replace: "-", " " | replace: "'", "" %}
+{% assign page_url = page.url | absolute_url | remove: ".html" %}
 <p>{{ page.url | absolute_url | remove: ".html" }}</p>
 <ul>
 {% for ref in site.pages %}
@@ -11,9 +12,10 @@
         {% if ref_content contains search_term %}
             <!-- Check if it is not the same site -->
             {% if page.url == ref.url %}{% else %}
-                <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
-                <p>{{ ref.url | absolute_url | remove: ".html" }}</p>
-                <p>{{ ref_dir }}</p>
+                <!-- Check if page being referenced in not an imediate child -->
+                {% if page_url == ref_dir %}
+                    <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
+                {% endif %}
             {% endif %}
         {% endif %}
     {% endif %}
