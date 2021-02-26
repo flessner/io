@@ -6,7 +6,7 @@
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
         {% assign ref_content = ref.content | downcase | replace: "-", " " | replace: "'", "" %}
         {% assign ref_top = ref.url | absolute_url | remove: ".html" | split: "/" | last | prepend: "/" %}
-        {% assign ref_dir = ref.url | absolute_url | remove: ".html" | remove: ref_top }
+        {% assign ref_dir = ref.url | absolute_url | remove: ".html" | remove: ref_top %}
         <!-- Searching all Pages -->
         {% if ref_content contains search_term %}
             <!-- Check if it is not the same site -->
