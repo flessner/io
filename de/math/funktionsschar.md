@@ -19,7 +19,6 @@ $$f_a(x)=\frac{1}{x-a}$$
 2. $x>a$ oder $x<a$ ist, dann ist die Funktion definiert und man kann mit ihr arbeiten.
 
 ## Ableiten
-#reference
 
 * $a$ wird wie eine gewöhnliche Zahl behandelt, so ist $f_a(x)=5x+2a \rightarrow f'_a(x)=5+0$
 * Als Vorfaktor bleibt $a$, wie jede gewöhnliche Zahl auch erhalten!

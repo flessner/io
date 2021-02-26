@@ -10,4 +10,3 @@
 - Have faith; all's possible, except maybe skiing through a revolving door.
 - Think ahead, but don't worship your plans; remember today is the first day of the rest of your learning experience.
 
-#reference

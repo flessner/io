@@ -47,7 +47,6 @@ $$f(x)=\frac{g(x)}{h(x)} \rightarrow f'(x)=\frac{h(x) \cdot g'(x)-g(x) \cdot h'(
 
 ## Besondere Funktionen
 ### Sinus/Cosinus
-#reference
 
 * $f(x)=sin(x) \rightarrow f'(x)=cos(x)$
 * $f(x)=cos(x) \rightarrow f'(x)=-sin(x)$
@@ -55,7 +54,6 @@ $$f(x)=\frac{g(x)}{h(x)} \rightarrow f'(x)=\frac{h(x) \cdot g'(x)-g(x) \cdot h'(
 * $f(x)=-cos(x) \rightarrow f'(x)=sin(x)$
 
 ### $e$-Funktion
-#reference
 
 Die Ableitung der $e$-Funktion ist die $e$-Funktion.
 Das kann man sich leicht merken. Schwieriger wird es jedoch, wenn nicht nur ein $$x$$ im Exponenten steht. 

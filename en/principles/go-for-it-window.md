@@ -6,4 +6,3 @@ This due to the shift in real and perceived state of the world.
 - 2007 iPhone launch was a perfect date
 - Google Glasses launched too early
 
-#reference

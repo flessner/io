@@ -8,4 +8,3 @@ To achieve good hospitality surprise the guests with an unexpected gift.
 | Bakery  | Surprise your customers with an extra bagel. |
 | Twitter | Share an extra idea in a tweetstorm. |
 
-#reference
