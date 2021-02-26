@@ -6,7 +6,7 @@
 - [[de]]
 - [[en]]
 
-## Articles
+## Blog Posts
 <ul>
     {% for post in site.posts %}
         <li> <a href="{{ post.url | absolute_url | remove: '.html' }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
