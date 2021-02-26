@@ -18,8 +18,7 @@ The problem is that most see loneliness as a result of lacking social contacts, 
 
 ## Solitude is key
 If you are left with yourself, without distraction, you don't know what you may find.
-> 🙊 Why be alone if you don’t have to be?
-
+- 🙊 **Why be alone if you don’t have to be**?
 > 📱 Perhaps because that hollow feeling — the one you get when you’re scrolling on your phone for too long? That doesn’t change after 5 or 10 years of scrolling.
 
 ## Strangers to ourselves
