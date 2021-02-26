@@ -4,8 +4,8 @@
 {% assign page_top = page_url | split: "/" | last | prepend: "/" %}
 {% assign page_dir = page_url | remove: page_top %}
 <ul>
-<p>search_term</p>
-<p>page_dir</p>
+<p>{{ search_term }}</p>
+<p>{{ page_dir }}</p>
 {% for ref in site.pages %}
     <!-- Only valid pages and no assets -->
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
@@ -20,7 +20,7 @@
                 <!-- Check if page being referenced in not an imediate child -->
                 {% if page_url == ref_dir %}{% else %}
                     <!-- Check if it is an imediate parent -->
-                    {% if page_dir == ref_url %}
+                    {% if page_dir == ref_url %}{% else %}
                         <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
                     {% endif %}
                 {% endif %}
