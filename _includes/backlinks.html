@@ -5,9 +5,9 @@
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}
     {% else %}
         <p>{{ ref_content }}</p>
-        {% assign ref_content = ref.content | markdownify %}
-        {% if ref_content contains search_url %}
+        {% assign ref_content = ref.content %}
+<!--     {% if ref_content contains search_url %}
             <p>hit</p>
-        {% endif %}
+        {% endif %}-->   
     {% endif %}
 {% endfor %}
