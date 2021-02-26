@@ -1,5 +1,5 @@
 ---
-source: https://mohitkhare.me/blog/personal-okrs/
+source: https://mohitkhare.com/blog/personal-okrs/
 author: Mohit Khare
 ---
 
@@ -24,8 +24,8 @@ Key Results:
 ```
 
 ## Tips & Tricks
-- Don't delete/change OKRs half way through... give a reason, why it failed!
+- Give a reason, why it failed/ was changed!
 - Update them regularly with new information
 - Don't set too many OKRs instead make the OKRs harder
-- Depending on the time frame set completion points/checkpoints (e.g. quarterly, monthly, weekly)
+- Set completion points/checkpoints (e.g. quarterly, monthly, weekly)
 
