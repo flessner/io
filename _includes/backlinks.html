@@ -14,7 +14,7 @@
             {% if page.url == ref.url %}{% else %}
                 <!-- Check if page being referenced in not an imediate child -->
                 {% if page_url == ref_dir %}{% else %}
-                    <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
+                    <li>[<a href="{{ page_url }}">{{ ref.title }}</a>]</li>
                 {% endif %}
             {% endif %}
         {% endif %}
