@@ -12,7 +12,7 @@
             {% if page.url == ref.url %}{% else %}
                 <li>[<a href="{{ ref.url | absolute_url }}">{{ ref.title }}</a>]</li>
                 <p>{{ ref.url | absolute_url | remove: ".html" }}</p>
-                <p>{{ ref_array[ref_array.size - 2] }}</p>
+                <p>{{ ref_array }}</p>
             {% endif %}
         {% endif %}
     {% endif %}
