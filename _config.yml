@@ -5,6 +5,7 @@ plugins:
 
 title: Flessner.io
 author: Torben Flessner
+url: flessner.io
 
 defaults:
   -

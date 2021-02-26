@@ -1,0 +1,5 @@
+<h2>Backlinks</h2>
+<p>{{ page.url }}</p>
+{% for ref in site.pages %}
+    <p>{{ ref.content }}</p>
+{% endfor %}

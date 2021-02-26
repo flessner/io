@@ -1,6 +1,7 @@
 <script src="{{ "/assets/js/lunr.js" | absolute_url }}"></script>
 
 <script>
+// Assigning Content to Search Index
 {% assign counter = 0 %}
 var documents = [{% for page in site.pages %}{
     "id": {{ counter }},
@@ -25,6 +26,8 @@ var idx = lunr(function () {
         this.add(doc)
     }, this)
 });
+
+// Processing results
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
@@ -38,7 +41,7 @@ function lunr_search(term) {
                 var url = documents[ref]['url'];
                 var title = documents[ref]['title'];
                 var body = documents[ref]['body'].substring(0,160)+'...';
-                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span></a></li>";
             }
         } else {
             document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
@@ -47,6 +50,7 @@ function lunr_search(term) {
     return false;
 }
 </script>
+
 <style>
     #lunrsearchresults {padding-top: 0.2rem;}
     .lunrsearchresult {padding-bottom: 1rem;}
@@ -57,6 +61,7 @@ function lunr_search(term) {
     .lunrsearchresult a:hover .title {text-decoration: underline;}
 </style>
 
+<!-- Actual HTML  -->
 <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" class="lunrsearch">
     <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="🔎 Find awesome results..." /></p>
 </form>
