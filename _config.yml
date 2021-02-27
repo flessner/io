@@ -21,14 +21,14 @@ defaults:
       author: "Torben Flessner"
   -
     scope:
-      path: "de"
+      path: "de/*/"
       type: "pages"
     values:
       layout: "kb"
       lang: "de-DE"
   -
     scope:
-      path: "en"
+      path: "en/*/"
       type: "pages"
     values:
       layout: "kb"
