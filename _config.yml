@@ -13,7 +13,6 @@ defaults:
       type: "pages"
     values:
       layout: "foam"
-      lang: "en-US"
   -
     scope:
       path: ""
