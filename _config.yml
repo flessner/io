@@ -7,25 +7,21 @@ title: Flessner.io
 author: Torben Flessner
 
 defaults:
-  -
+  - 
     scope:
       path: ""
       type: "pages"
     values:
       layout: "foam"
-  - scope:
-      path: "en"
-      type: "pages"
-    values:
-      layout: "kindex"
       lang: "en-US"
-  - scope:
+  - 
+    scope:
       path: "de"
       type: "pages"
     values:
       layout: "kb"
       lang: "de-DE"
-  -
+  - 
     scope:
       path: "en"
       type: "pages"

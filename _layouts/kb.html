@@ -1,6 +1,5 @@
 ---
 layout: foam
-description: {{ page.content | markdownify | replace: '.', '. ' | replace: '</h2>', ': ' | replace: '</h3>', ': ' | replace: '</h4>', ': ' | replace: '</p>', ' ' | strip_html | strip_newlines | replace: '  ', ' ' | replace: '"', ' ' | remove_first: page.title | truncate: 128 }}
 ---
 
 {% include breadcrumbs.html %}
