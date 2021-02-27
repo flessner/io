@@ -1,4 +1,4 @@
-# All the pages 🤯
+# All pages
 
 <ul>
 {% for ref in site.pages %}
