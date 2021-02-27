@@ -1,4 +1,4 @@
 # Geschichte
 
 ## Alle Einträge
-{% include filter.html tag="history" lang="de-DE" %}
+{% include tagdir.html tag="history" %}

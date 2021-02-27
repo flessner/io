@@ -1,4 +1,4 @@
 # Mathematik
 
 ## Alle Mathe Resourcen
-{% include filter.html tag="history" lang="de-DE" %}
+{% include tagdir.html tag="history" %}
