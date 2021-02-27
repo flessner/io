@@ -2,5 +2,5 @@
 ≪ [Home]({{ "/" | absolute_url }})
 
 ## All Topics
-{% include subdirs.html %}
+{% include subdir.html %}
 

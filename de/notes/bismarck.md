@@ -1,5 +1,6 @@
 ---
 source: https://learnattack.de/schuelerlexikon/geschichte/bismarck
+tags: [history]
 ---
 
 # Otto von Bismarck

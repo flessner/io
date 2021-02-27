@@ -1,4 +1,4 @@
 # Geschichte
 
 ## Alle Einträge
-{% include subdirs.html %}
+{% include filter.html tag="history" %}

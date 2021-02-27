@@ -1,3 +1,7 @@
+---
+tags: [math]
+---
+
 # Binomische Formeln
 
 ## 1. Binomische Formel

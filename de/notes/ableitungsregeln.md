@@ -1,3 +1,7 @@
+---
+tags: [math]
+---
+
 # Ableitungsregeln
 ## Ableitung einer Konstante ist **Null**.
 

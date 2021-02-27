@@ -1,3 +1,7 @@
+---
+tags: [math]
+---
+
 # Funktionsschar
 Der Funktionsschar verändert die Funktion auf eine Weise, die komplizierter als eine lineare Transformation ist.
 Beispiel für eine Funktion: $f_a(x)=ax^2-2ax+4a$

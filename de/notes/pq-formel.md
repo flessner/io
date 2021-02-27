@@ -1,3 +1,7 @@
+---
+tags: [math]
+---
+
 # PQ-Formel
 Die pq-Formel ist eine Lösungsformel für quadratische Gleichungen in Normalform.
 

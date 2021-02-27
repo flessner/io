@@ -3,4 +3,4 @@
 > 📽️ Everything Motion-Picture related.
 
 ## All Videos
-{% include subdirs.html %}
+{% include subdir.html %}

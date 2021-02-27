@@ -1,3 +1,0 @@
-# Lineare Algebra
-
-TBD

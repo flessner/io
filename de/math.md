@@ -1,4 +1,4 @@
 # Mathematik
 
 ## Alle Mathe Resourcen
-{% include subdirs.html %}
+{% include filter.html tag="history" lang={{ page.lang }} %}
