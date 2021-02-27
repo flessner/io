@@ -1,7 +1,6 @@
-# General Notes
+# Notes
 
-> 💡 Some standard theorems or ideas which could be useful in day to day life.
+> 💡 All notes without tag filters.
 
-## All Ideas
+## All Notes
 {% include subdir.html %}
-
