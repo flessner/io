@@ -1,5 +1,7 @@
-# Wissensbasis
-≪ [Home]({{ "/" | absolute_url }})
+---
+layout: kindex
+---
 
+# Wissensbasis
 ## Alle Fachgebiete
 {% include subdir.html %}

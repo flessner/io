@@ -13,22 +13,21 @@ defaults:
       type: "pages"
     values:
       layout: "foam"
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      path: "en"
+      type: "pages"
     values:
-      author: "Torben Flessner"
-  -
-    scope:
-      path: "de/*/"
+      layout: "kindex"
+      lang: "en-US"
+  - scope:
+      path: "de"
       type: "pages"
     values:
       layout: "kb"
       lang: "de-DE"
   -
     scope:
-      path: "en/*/"
+      path: "en"
       type: "pages"
     values:
       layout: "kb"

@@ -1,3 +1,7 @@
+---
+layout: kindex
+---
+
 # Papers
 
 > 📓 Here are all the papers I have Notes on!

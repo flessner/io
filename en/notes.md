@@ -1,3 +1,7 @@
+---
+layout: kindex
+---
+
 # Notes
 
 > 💡 All notes without tag filters.

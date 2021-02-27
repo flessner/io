@@ -1,3 +1,7 @@
+---
+layout: kindex
+---
+
 # Videos
 
 > 📽️ Everything Motion-Picture related.

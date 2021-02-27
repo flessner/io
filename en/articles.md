@@ -1,3 +1,7 @@
+---
+layout: kindex
+---
+
 # Articles
 
 > 📓 Here are all the articles I have Notes on!

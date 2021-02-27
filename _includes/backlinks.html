@@ -7,6 +7,7 @@
 {% assign page_content = page.content | downcase | replace: "-", " " | replace: "'", "" %}
 <ul class='backlinks'>
 {% for ref in site.pages %}
+    {% comment %} Excluding assets {% endcomment %}
     {% if ref.url contains '.xml' or ref.url contains 'assets' %}{% else %}
         {% assign ref_content = ref.content | downcase | replace: "-", " " | replace: "'", "" %}
         {% assign ref_url = ref.url | absolute_url | remove: ".html" %}
@@ -14,15 +15,18 @@
         {% assign ref_top = ref_url | split: "/" | last | prepend: "/" %}
         {% assign ref_dir = ref_url | remove: ref_top %}
         {% if ref_content contains search_term or ref_content contains search_title %}
-            <!-- Check if it is not the same site -->
+            {% comment %} Check if it is not the same site {% endcomment %}
             {% if page.url == ref.url %}{% else %}
-                <!-- Check if current page includes reference already -->
+                {% comment %}- Check if current page includes reference already {% endcomment %}
                 {% if page_content contains ref_term %}{% else %}
-                    <!-- Check if page being referenced in not an imediate child -->
+                    {% comment %}- Check if page being referenced in not an imediate child {% endcomment %}
                     {% if page_url == ref_dir %}{% else %}
-                        <!-- Check if it is an imediate parent -->
-                        {% if page_dir == ref_url %}{% else %}
-                            <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
+                        {% comment %} Excluding home or all {% endcomment %}
+                        {% if page.url == "/" or page.url == "/all" %}{% else %}
+                            {% comment %} Check if it is an imediate parent {% endcomment %}
+                            {% if page_dir == ref_url %}{% else %}
+                                <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
+                            {% endif %}
                         {% endif %}
                     {% endif %}
                 {% endif %}
