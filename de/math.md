@@ -1,4 +1,4 @@
 # Mathematik
-
 ## Alle Mathe Resourcen
-{% include tagdir.html tag="history" %}
+
+{% include tagdir.html tag="math" %}
