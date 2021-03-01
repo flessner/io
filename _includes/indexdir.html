@@ -1,7 +1,9 @@
 <ul>
-    {% for ref in site.pages %}
+{% for ref in site.pages %}
+    {% if ref.lang == page.lang %}
         {% if ref.tags contains include.tag %}
             <li>[<a href="{{ ref.url | absolute_url | remove: '.html' }}">{{ ref.title }}</a>]</li>
         {% endif %}
-    {% endfor %}
+    {% endif %}
+{% endfor %}
 </ul>

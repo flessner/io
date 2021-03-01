@@ -3,5 +3,5 @@ layout: kindex
 ---
 
 # Mathematik
-## Alle Mathe Resourcen
-{% include tagdir.html tag="math" %}
+## Alle Mathe Ressourcen
+{% include indexdir.html tag="math" %}
