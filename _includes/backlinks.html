@@ -19,7 +19,10 @@
             {% if page.url == ref.url %}{% else %}
                 {% comment %}- Check if current page includes reference already {% endcomment %}
                 {% if page_content contains ref_term %}{% else %}
-                    <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
+                    {% comment %} Check if it is an imediate parent {% endcomment %}
+                    {% if page_dir == ref_url %}{% else %}
+                        <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
+                    {% endif %}
                 {% endif %}
             {% endif %}
         {% endif %}
