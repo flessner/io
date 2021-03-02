@@ -1,7 +1,3 @@
----
-tags: [history]
----
-
 ## Gründe für den ersten Weltkrieg
 
 | Schlagwort       | Erklärung                                                                                             |
