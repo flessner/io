@@ -19,16 +19,7 @@
             {% if page.url == ref.url %}{% else %}
                 {% comment %}- Check if current page includes reference already {% endcomment %}
                 {% if page_content contains ref_term %}{% else %}
-                    {% comment %}- Check if page being referenced in not an imediate child {% endcomment %}
-                    {% if page_url == ref_dir %}{% else %}
-                        {% comment %} Excluding home or all {% endcomment %}
-                        {% if page.url == "/" or page.url == "/all" %}{% else %}
-                            {% comment %} Check if it is an imediate parent {% endcomment %}
-                            {% if page_dir == ref_url %}{% else %}
-                                <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
-                            {% endif %}
-                        {% endif %}
-                    {% endif %}
+                    <li>[<a href="{{ ref_url }}">{{ ref.title }}</a>]</li>
                 {% endif %}
             {% endif %}
         {% endif %}
