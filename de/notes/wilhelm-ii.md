@@ -3,7 +3,7 @@ source: https://www.huisdoorn.nl/de/museum/wilhelm-ii/kaiser-wilhelm-ii/
 tags: [history]
 ---
 
-## Friedrich Wilhelm II
+# Friedrich Wilhelm II
 Friedrich Wilhelm Victor Albert wurde am 27. Januar 1859 geboren.
 Er ist dafür bekannt die Bündnispolitik von [[bismarck]] zu beenden.
 Dadurch brachte er die außenpolitische Situation Deutschlands innerhalb Europas zu Fall.

@@ -61,4 +61,7 @@
     "!yml",
     "org"
   ],
+  "cSpell.ignoreWords": [
+    "kindex"
+  ],
 }
