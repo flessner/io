@@ -1,6 +1,5 @@
 ---
 source: https://www.huisdoorn.nl/de/museum/wilhelm-ii/kaiser-wilhelm-ii/
-tags: [history]
 ---
 
 # Friedrich Wilhelm II

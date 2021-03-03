@@ -1,4 +1,4 @@
-## Gründe für den ersten Weltkrieg
+# Gründe für den ersten Weltkrieg
 
 | Schlagwort       | Erklärung                                                                                             |
 | ---------------- | ----------------------------------------------------------------------------------------------------- |
