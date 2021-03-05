@@ -1,7 +1,3 @@
----
-tags: [math]
----
-
 # Kurvendiskusion
 
 | Bedingung | Eigenschaft der Funktion | Eigenschaft des Graphen |

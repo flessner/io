@@ -1,7 +1,3 @@
----
-tags: [math]
----
-
 # Potenzgesetze
 ## Gleiche Basis
 ### Multiplikation
