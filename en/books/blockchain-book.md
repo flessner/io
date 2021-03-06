@@ -1,8 +1,9 @@
 ---
+source: https://www.amazon.com/Blockchain-Everything-Stephen-P-Williams-ebook/dp/B07H7VFB7J
 author: Stephen P. Wiliams
 ---
 
-# Blockchain
+# Blockchain: The Next Everything
 With the dawn of the internet a couple new problems arrived.
 For example hackers made the internet unsafe for e.g. financial transactions.
 Blockchain at its core is build to be **unchangeable**.

@@ -1,8 +1,9 @@
 ---
+source: https://www.amazon.com/Creative-Inc-Ultimate-Successful-Freelance-ebook/dp/B00440D1TO/ref=sr_1_2?dchild=1&keywords=creative+inc&qid=1614991653&s=digital-text&sr=1-2
 author: Meg Mateo Ilasco & Joy Deangdeelert Cho
 ---
 
-# Creative, Inc.
+# Creative, Inc.: The Ultimate Guide to Running a Successful Freelance Business
 If you run a business in a *creative industry*, you'll need to have your fundamentals down.
 This comes with having a **mission statement** and all **bureaucracy** done, like paying taxes.
 
