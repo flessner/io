@@ -1,1 +1,6 @@
 # Magnetisches Feld
+Ein Magnet besteht aus einem Süd- und einem Nordpol, dabei ist der **Nord negativ** und
+der **Süd positiv**, so gehen also die Feldlinien gemäß der physikalischen Fluss Richtung.
+
+Für die Berechnung der magnetischen Feldstärke $B$ gilt:
+$$B(T)=F(N)/(I(A)*L(m))$$
