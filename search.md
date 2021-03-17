@@ -1,3 +1,3 @@
-# Search
+# Search 🔎
 
 {% include search.html %}
