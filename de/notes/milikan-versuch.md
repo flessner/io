@@ -22,7 +22,7 @@ herrscht ein **Kräftegleichgewicht**, und das Öltröpchen schwebt.
 
 $$Q=\frac{F_G*d}{U}$$
 
-## Methode 1 - Schwebemethode
+## Schwebemethode
 Diese Methode beruht auf der Bestimmung der Ladung durch Messen der Schwebespannung und der Fallgeschwindigkeit ohne elektrisches Feld.
 
 Im **Schwebezustand**:
