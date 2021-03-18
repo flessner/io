@@ -5,6 +5,7 @@ Die Feldstärke bezeichnet die Bewegung und Richtung, welche auf den Stoff einwi
 > 🌊 Die Feldstärke wird auch Flussdichte genannt.
 
 - Formel: $B= \mu_0* \mu_r * H$
+- `B` in Newton pro Amperemeter
 
 > Siehe auch [[elektrische-feldstaerke]]
 
