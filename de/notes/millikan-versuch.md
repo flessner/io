@@ -1,4 +1,4 @@
-# Milikan Versuch
+# Millikan Versuch
 ## Grundgedanke
 Die Reibungskraft ist von der Geschwindigkeit abhängig.
 Je größer die Fallgeschwindigkeit wird, umso größer ist die Reibungskraft.

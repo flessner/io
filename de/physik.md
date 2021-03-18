@@ -10,7 +10,7 @@
 - [[lorentzkraft]]
 - [[braunsche-roehre]]
 - [[beschleunigungsspannung]]
-- [[milikan-versuch]]
+- [[millikan-versuch]]
 
 ## Einheiten
 - [[elektrische-feldstaerke]]
@@ -30,7 +30,7 @@
 [lorentzkraft]: notes/lorentzkraft.md "Lorentzkraft $F_L$"
 [braunsche-roehre]: notes/braunsche-roehre.md "Braun’sche Röhre"
 [beschleunigungsspannung]: notes/beschleunigungsspannung.md "Beschleunigungsspannung"
-[milikan-versuch]: notes/milikan-versuch.md "Milikan Versuch"
+[millikan-versuch]: notes/millikan-versuch.md "Millikan Versuch"
 [elektrische-feldstaerke]: notes/elektrische-feldstaerke.md "Elektrische Feldstärke $F_{el}$"
 [ladung-q]: notes/ladung-q.md "Ladung $Q$"
 [kraft-f]: notes/kraft-f.md "Kraft $F$"
