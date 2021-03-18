@@ -1,13 +1,15 @@
 # Physik 🍎
-## Hier sind alle möglichen Notizen zu Physik!
+## Elektro-Magnetismus
 - [[magnetisches-feld]]
 - [[feldstaerke]]
 - [[stromstaerke]]
 - [[magnetfeld-eines-strom-leiters]]
-- [[magnetfeld-einer-langen-spule]]
+- [[kraft-von-strom-leiter]]
+- [[feldlinien]]
+- [[magnetfeld-einer-spule]]
 - [[lorentzkraft]]
 - [[braunsche-roehre]]
-- [[milikan-versuch.md]]
+- [[milikan-versuch]]
 
 ## Einheiten
 - [[elektrische-feldstaerke]]
@@ -21,10 +23,12 @@
 [feldstaerke]: notes/feldstaerke.md "Feldstärke"
 [stromstaerke]: notes/stromstaerke.md "Stromstärke"
 [magnetfeld-eines-strom-leiters]: notes/magnetfeld-eines-strom-leiters.md "Magnetfeld eines stromdurchflossenen Leiters"
-[magnetfeld-einer-langen-spule]: notes/magnetfeld-einer-langen-spule.md "Magnetfeld einer langen Spule"
+[kraft-von-strom-leiter]: notes/kraft-von-strom-leiter.md "Kraft von Stromdurchflossenen Leiter"
+[feldlinien]: notes/feldlinien.md "Feldlinien"
+[magnetfeld-einer-spule]: notes/magnetfeld-einer-spule.md "Magnetfeld einer langen Spule"
 [lorentzkraft]: notes/lorentzkraft.md "Lorentzkraft"
 [braunsche-roehre]: notes/braunsche-roehre.md "Braun’sche Röhre"
-[milikan-versuch.md]: notes/milikan-versuch.md "Milikan Versuch"
+[milikan-versuch]: notes/milikan-versuch.md "Milikan Versuch"
 [elektrische-feldstaerke]: notes/elektrische-feldstaerke.md "Elektrische Feldstärke $F_{el}$"
 [ladung-q]: notes/ladung-q.md "Ladung $Q$"
 [kraft-f]: notes/kraft-f.md "Kraft $F$"

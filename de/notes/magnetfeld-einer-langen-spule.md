@@ -1,1 +1,0 @@
-# Magnetfeld einer langen Spule
