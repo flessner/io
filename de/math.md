@@ -2,7 +2,7 @@
 layout: kindex
 ---
 
-# Mathematik
+# Mathematik 🖩
 ## Alle Mathe Ressourcen
 - [[ableitungsregeln]]
 - [[binomische-formeln]]
