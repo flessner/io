@@ -4,7 +4,7 @@ der **Süd positiv**, so gehen also die Feldlinien gemäß der physikalischen Fl
 
 Für die Berechnung der magnetischen Feldstärke $B$ gilt:
 
-$$B(T)=\frac{F}{I*L}$$
+$$B(T)= \frac{F}{I*L}$$
 
 > Mehr unter [[feldlinien]]
 
