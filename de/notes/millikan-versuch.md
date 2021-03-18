@@ -9,6 +9,7 @@ Nach einer sehr kurzen Beschleunigungsphase führt das Öltröpfchen eine gleich
 da sich die Gewichtskraft FG und die Reibungskraft FR aufheben.
 
 Es herrscht dann ein *Kräftegleichgewicht*:
+
 $$|FG| = |FR|$$
 
 Die Reibungskraft in Luft hängt von der Geschwindigkeit ab – je größer $v$, desto größer $FR$
@@ -26,10 +27,13 @@ $$Q=\frac{F_G*d}{U}$$
 Diese Methode beruht auf der Bestimmung der Ladung durch Messen der Schwebespannung und der Fallgeschwindigkeit ohne elektrisches Feld.
 
 Im **Schwebezustand**:
-$$Q=\frac{4pd\pi r^3g}{3U}$$
+
+$$Q= \frac{4pd \pi r^3g}{3U}$$
 
 Für den **Fall** im Gravitationsfeld gilt:
-$$r=\sqrt{\frac{9nv}{2pg}}$$
+
+$$r= \sqrt{ \frac{9nv}{2pg}}$$
 
 In dem man einsetzt kann man so umstellen:
-$$Q=\frac{6\pi dnv}{U}*\sqrt{\frac{9nv}{2pg}}$$
+
+$$Q= \frac{6\pi dnv}{U}* \sqrt{ \frac{9nv}{2pg}}$$
