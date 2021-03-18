@@ -9,6 +9,7 @@
 - [[magnetfeld-einer-spule]]
 - [[lorentzkraft]]
 - [[braunsche-roehre]]
+- [[beschleunigungsspannung]]
 - [[milikan-versuch]]
 
 ## Einheiten
@@ -26,8 +27,9 @@
 [kraft-von-strom-leiter]: notes/kraft-von-strom-leiter.md "Kraft von Stromdurchflossenen Leiter"
 [feldlinien]: notes/feldlinien.md "Feldlinien"
 [magnetfeld-einer-spule]: notes/magnetfeld-einer-spule.md "Magnetfeld einer langen Spule"
-[lorentzkraft]: notes/lorentzkraft.md "Lorentzkraft"
+[lorentzkraft]: notes/lorentzkraft.md "Lorentzkraft $F_L$"
 [braunsche-roehre]: notes/braunsche-roehre.md "Braun’sche Röhre"
+[beschleunigungsspannung]: notes/beschleunigungsspannung.md "Beschleunigungsspannung"
 [milikan-versuch]: notes/milikan-versuch.md "Milikan Versuch"
 [elektrische-feldstaerke]: notes/elektrische-feldstaerke.md "Elektrische Feldstärke $F_{el}$"
 [ladung-q]: notes/ladung-q.md "Ladung $Q$"
