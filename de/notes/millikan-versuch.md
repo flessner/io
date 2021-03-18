@@ -8,9 +8,7 @@ und das Tröpfchen wird nicht weiter beschleunigt, sondern bewegt sich mit konst
 Nach einer sehr kurzen Beschleunigungsphase führt das Öltröpfchen eine gleichförmige Bewegung aus,
 da sich die Gewichtskraft FG und die Reibungskraft FR aufheben.
 
-Es herrscht dann ein *Kräftegleichgewicht*:
-
-$$|FG| = |FR|$$
+Es herrscht dann ein *Kräftegleichgewicht*: $|FG| = |FR|$
 
 Die Reibungskraft in Luft hängt von der Geschwindigkeit ab – je größer $v$, desto größer $FR$
 
