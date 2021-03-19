@@ -5,4 +5,8 @@ Elektronen treten aus einer heißen Kathode (negativer Pol) aus und bewegen sich
 Dabei werden sie von der Anode angezogen; die Elektronen werden beschleunigt.
 
 - Formel: $E_{kin}=q*U=\frac{1}{2}mv^2$
-- Nach v: $v=\sqrt{(2q*\frac{U}{m})}$
+- Nach $v=\sqrt{(\frac{2Uq}{m})}$
+- Nach $a=\frac{U*q}{d*m}$
+
+Mit `v=a*t`:
+- $v=\frac{U*q}{d*m}*t$
