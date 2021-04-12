@@ -3,7 +3,6 @@ layout: kindex
 ---
 
 # Notes
-
 > 💡 All notes without tag filters.
 
 ## All Notes
